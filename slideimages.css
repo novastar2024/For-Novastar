@@ -1,0 +1,303 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #111222;
+    justify-content: center;
+    color: #fff;
+}
+
+.slider{
+    width: 1000px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-bottom: 150px;
+}
+
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+
+#venus{
+    background: linear-gradient(-45deg,#ee7752,#e73c7e,#23a6d5,#23d5ab);
+    color: transparent;
+    background-clip: text;
+    animation: gradient 5s ease infinite;
+    -ms-text-overflow: clip;
+}
+
+@keyframes gradient {
+    0%{
+        background-position: 0% 50%;
+    }50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+.slides input{
+    display: none;
+}
+
+.slide{
+    width: 20%;
+    transition: 2s;
+}
+
+.slide img{
+    width: 1000px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+.navagation-manual{
+   width: 1000px;
+   display: flex;
+   justify-content: center;
+   position: absolute;
+   margin-top: -40px;
+}
+
+.manual-btn{
+    border: 1px solid black;
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 50px;
+}
+
+
+.manual-btn:hover{
+    background-color: aquamarine;
+    transition: 1s;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+    margin-left: -60%;
+}
+
+.sec-1{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+}
+
+.title{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+   flex-direction: column;
+}
+
+.info-title{
+    font-size: 4em;
+    color: aqua;
+}
+
+.container{
+    display: flex;
+    width: 1000px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.container .imgae{
+    width: 500px;
+    height: 300px;
+    position: relative;
+}
+
+.imgae img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 111;
+    object-fit: cover;
+}
+
+.info-section{
+    z-index: 222;
+    border: 1px solid black;
+    background: rgba(225, 225, 225, 0.1);
+    backdrop-filter: blur(20px);
+    padding: 30px;
+    line-height: 30px;
+    max-width: 450px;
+    transform: translate(-75px, 150px)
+}
+
+h4{
+    display: flex;
+    justify-content: center;
+    width: 450px;
+}
+
+
+.all-icon{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    margin-top: 200px;
+    font-size: 30px;
+    margin-bottom: 100px;
+    width: 1000px;
+}   
+
+a{
+    color: #fff;
+}
+
+.info-sec{
+    max-width: 400px;
+    margin-left: 30px;
+    border: 1px solid black;
+    background: rgba(225, 225, 225, 0.1);
+    backdrop-filter: blut(20px);
+    padding: 10px;
+    line-height: 25px;
+    border-radius: 20px;
+}
+
+.sec-2{
+    margin-bottom: 150px;
+}
+
+.emily{
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+p{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.odd{
+    padding-left: 100px;
+}
+
+.even{
+    padding-left: 50px;
+}
+
+.ngunci{
+    width: 400px;
+    
+}
+
+.sec-3{
+    margin-bottom: 150px;
+}
+
+.sec-4{
+    margin-bottom: 150px;
+    margin-top: 200px;
+}
+
+
+
+.pain{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.her{
+    width: 300px;
+    height: 150px;
+}
+
+.sad,.fake,.rejected{
+    border: 1px solid black;
+    background: rgba(225, 225, 225, 0.1);
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    padding: 20px;
+}
+
+.heart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 150px;
+
+}
+
+.mercy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #222;
+    text-shadow: 
+    0 0 5px red,
+    0 0 45px red,
+    0 0 90px red 
+    ;
+    font-size: 80px;
+}
+
+.jesmine{
+    font-size: 100px;
+    color: #222;
+    text-shadow: 
+    0 0 5px red,
+    0 0 45px red,
+    0 0 90px red
+    ;
+    animation: heart 1s infinite;
+}
+
+@keyframes heart {
+    0%{
+       transform: scale(1);
+    }
+
+    20%{
+        transform: scale(1.15);
+    }
+
+    40%{
+        transform: scale(1.4);
+    }
+    
+    60%{
+        transform: scale(1.7);
+    }
+
+    80%{
+        transform: scale(1.9);
+    }
+}
+
+
+
+
